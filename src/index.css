@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main{
+    @apply container mx-auto px-4 grid grid-cols-5 gap-8 items-start
+}
+.header{
+    @apply bg-slate-50 shadow-lg sticky top-0 z-10
+}
+.top-header{
+    @apply flex flex-col md:flex-row justify-center md:justify-between items-center
+}
+.header-h2{
+    @apply text-center py-2 md:py-4 w-full md:w-1/2 flex flex-col mx-auto px-4
+}
+.header-logo{
+    @apply text-2xl md:text-4xl italic font-bold uppercase text-rose-800
+}
+.header-search{
+    @apply border text-sm md:text-base border-slate-400 rounded-full py-1 px-2 capitalize mx-auto w-3/4
+}
+.header-list{
+    @apply flex justify-between py-2 container px-4 mx-auto
+}
+.header-item{
+    @apply text-[10px] md:text-base capitalize text-center cursor-pointer
+}
+.sidebar-loading{
+    @apply py-8 text-center font-bold  text-3xl
+}
+.aside{
+    @apply sticky top-10 py-8 col-span-5 md:col-span-1 w-full
+}
+.grid-loading{
+    @apply py-8 text-center font-bold  text-3xl min-h-screen
+}
+.grid-box{
+    @apply grid py-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 gap-y-8 md:gap-8
+}
+.banner-loading{
+    @apply py-8 text-center font-bold  text-3xl min-h-[500px]
+}
+.banner-box{
+    @apply bg-slate-950  flex overflow-x-auto snap-x
+}
+.banner-wrapper{
+    @apply snap-center w-full shrink-0 relative
+}
+.banner-figure{
+    @apply overflow-hidden h-[300px] md:h-[500px]
+}
+.banner-info{
+    @apply absolute bottom-0 py-4 md:py-8 text-center w-full bg-slate-500/20
+}
+.banner-category{
+    @apply text-white uppercase
+}
+.banner-title{
+    @apply text-white text-xl md:text-3xl
+}
+.banner-creator{
+    @apply text-white text-sm italic
+}
+.footer{
+    @apply bg-slate-50 py-8
+}
+.footer-box{
+    @apply container mx-auto px-4 text-center
+}
+.article{
+    @apply shadow-lg flex flex-col justify-between
+}
+.article-figure{
+    @apply h-40 overflow-hidden flex items-start justify-start
+}
+.article-img{
+    @apply h-full object-cover w-full
+}
+.article-info{
+    @apply px-4 py-2
+}
+.article-category{
+    @apply text-sky-600
+}
+.article-title{
+    @apply text-base md:text-xl font-bold
+}
+.article-creator{
+    @apply italic text-[10px] md:text-sm mt-2
+}
+.aside .article{
+   @apply md:w-full w-1/2  shrink-0
+}
